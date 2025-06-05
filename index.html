@@ -303,22 +303,19 @@
             margin-bottom: 40px;
         }
 
-        .carousel-container {
-            position: relative;
+        .product-image-container {
             background: var(--cream);
             border-radius: 15px;
             overflow: hidden;
             height: 300px;
-        }
-
-        .carousel {
             display: flex;
-            height: 100%;
-            transition: transform 0.3s ease;
+            align-items: center;
+            justify-content: center;
         }
 
-        .carousel-slide {
-            min-width: 100%;
+        .product-single-image {
+            width: 100%;
+            height: 100%;
             background: linear-gradient(45deg, var(--light-green), var(--green));
             display: flex;
             align-items: center;
@@ -326,28 +323,8 @@
             color: white;
             font-weight: bold;
             font-size: 18px;
-        }
-
-        .carousel-nav {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 10px;
-        }
-
-        .carousel-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.5);
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        .carousel-dot.active {
-            background: white;
+            text-align: center;
+            padding: 20px;
         }
 
         .product-details {
@@ -662,21 +639,22 @@
             <div class="product-detail">
                 <h1>Envases de Cartón</h1>
                 <div class="product-main">
-                    <div class="carousel-container">
-                        <div class="carousel" id="carousel-envases">
-                            <div class="carousel-slide">[Imagen 1: Envase de cartón vacío]</div>
-                            <div class="carousel-slide">[Imagen 2: Envase con productos]</div>
-                            <div class="carousel-slide">[Imagen 3: Diferentes tamaños]</div>
-                        </div>
-                        <div class="carousel-nav">
-                            <div class="carousel-dot active" onclick="goToSlide('envases', 0)"></div>
-                            <div class="carousel-dot" onclick="goToSlide('envases', 1)"></div>
-                            <div class="carousel-dot" onclick="goToSlide('envases', 2)"></div>
-                        </div>
+                    <div class="product-image-container">
+                        <div class="product-single-image">Envases de Cartón Reciclado<br>Diferentes Tamaños Disponibles</div>
                     </div>
                     <div class="product-details">
                         <div class="description">
-                            <p>Nuestros envases de cartón están fabricados con materiales 100% reciclados y son completamente biodegradables. Perfectos para almacenar y transportar todo tipo de productos de manera segura y sostenible. Disponibles en múltiples tamaños para adaptarse a todas tus necesidades.</p>
+                            <p><strong>Envases de cartón 100% reciclado y biodegradable</strong></p>
+                            <p>Nuestros envases de cartón están fabricados con materiales completamente reciclados y certificados FSC. Perfectos para el almacenamiento y transporte seguro de productos diversos. Su diseño resistente garantiza la protección del contenido mientras mantiene un compromiso total con el medio ambiente.</p>
+                            <p><strong>Características principales:</strong></p>
+                            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                                <li>Material 100% reciclado y reciclable</li>
+                                <li>Biodegradación completa en 60-90 días</li>
+                                <li>Resistente a la humedad y deformaciones</li>
+                                <li>Apilable y fácil de almacenar</li>
+                                <li>Superficie lisa ideal para etiquetado</li>
+                            </ul>
+                            <p>Disponible en 5 tamaños diferentes para adaptarse a cualquier necesidad de empaque. Ideal para productos alimentarios, cosméticos, artesanías y envíos postales pequeños.</p>
                         </div>
                         <div class="model-selector">
                             <h3>Selecciona el tamaño:</h3>
@@ -723,21 +701,22 @@
             <div class="product-detail">
                 <h1>Cajas para Envíos</h1>
                 <div class="product-main">
-                    <div class="carousel-container">
-                        <div class="carousel" id="carousel-cajas">
-                            <div class="carousel-slide">[Imagen 1: Caja pequeña 10cm³]</div>
-                            <div class="carousel-slide">[Imagen 2: Caja mediana 30cm³]</div>
-                            <div class="carousel-slide">[Imagen 3: Caja grande personalizada]</div>
-                        </div>
-                        <div class="carousel-nav">
-                            <div class="carousel-dot active" onclick="goToSlide('cajas', 0)"></div>
-                            <div class="carousel-dot" onclick="goToSlide('cajas', 1)"></div>
-                            <div class="carousel-dot" onclick="goToSlide('cajas', 2)"></div>
-                        </div>
+                    <div class="product-image-container">
+                        <div class="product-single-image">Cajas de Envío<br>Cartón Corrugado Resistente</div>
                     </div>
                     <div class="product-details">
                         <div class="description">
-                            <p>Cajas de envío fabricadas con cartón corrugado reciclado, diseñadas para proteger tus productos durante el transporte. Resistentes, ligeras y completamente reciclables. Perfectas para e-commerce y envíos comerciales con opción de personalización.</p>
+                            <p><strong>Cajas de envío profesionales y sostenibles</strong></p>
+                            <p>Diseñadas específicamente para e-commerce y envíos comerciales, nuestras cajas combinan la máxima protección para tus productos con un compromiso total hacia la sostenibilidad. Fabricadas con cartón corrugado de alta resistencia 100% reciclado.</p>
+                            <p><strong>Características principales:</strong></p>
+                            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                                <li>Cartón corrugado de doble pared para máxima resistencia</li>
+                                <li>Capacidad de carga hasta 25kg (caja grande)</li>
+                                <li>Fácil montaje sin necesidad de pegamento adicional</li>
+                                <li>100% reciclable después de su uso</li>
+                                <li>Opción de personalización con tintas ecológicas</li>
+                            </ul>
+                            <p>Perfectas para proteger productos durante el transporte terrestre, marítimo y aéreo. La opción de personalización permite añadir tu marca o mensajes ecológicos con tintas vegetales biodegradables.</p>
                         </div>
                         <div class="model-selector">
                             <h3>Selecciona el tamaño:</h3>
@@ -780,21 +759,22 @@
             <div class="product-detail">
                 <h1>Envases de Bagazo de Caña de Azúcar</h1>
                 <div class="product-main">
-                    <div class="carousel-container">
-                        <div class="carousel" id="carousel-bagazo">
-                            <div class="carousel-slide">[Imagen 1: Envase pequeño 10cm²]</div>
-                            <div class="carousel-slide">[Imagen 2: Envase mediano 20cm²]</div>
-                            <div class="carousel-slide">[Imagen 3: Envase grande 30cm²]</div>
-                        </div>
-                        <div class="carousel-nav">
-                            <div class="carousel-dot active" onclick="goToSlide('bagazo', 0)"></div>
-                            <div class="carousel-dot" onclick="goToSlide('bagazo', 1)"></div>
-                            <div class="carousel-dot" onclick="goToSlide('bagazo', 2)"></div>
-                        </div>
+                    <div class="product-image-container">
+                        <div class="product-single-image">Envases de Bagazo<br>Caña de Azúcar Moldeada</div>
                     </div>
                     <div class="product-details">
                         <div class="description">
-                            <p>Envases innovadores fabricados con bagazo de caña de azúcar, un subproducto 100% natural de la industria azucarera. Resistentes al agua y grasa, perfectos para alimentos. Se compostan completamente en 60 días, convirtiendo residuos en recursos valiosos.</p>
+                            <p><strong>Envases innovadores de bagazo de caña de azúcar</strong></p>
+                            <p>Representan la vanguardia en envases sostenibles, fabricados con bagazo de caña de azúcar, un valioso subproducto de la industria azucarera que normalmente se desperdiciaría. Este material se transforma en envases resistentes y completamente compostables.</p>
+                            <p><strong>Características principales:</strong></p>
+                            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                                <li>Material 100% natural y renovable</li>
+                                <li>Resistente al agua y aceites alimentarios</li>
+                                <li>Apto para microondas y congelador</li>
+                                <li>Compostaje industrial en 60 días</li>
+                                <li>Superficie antiadherente natural</li>
+                            </ul>
+                            <p>Especialmente diseñados para la industria alimentaria, son perfectos para restaurantes, servicios de catering y take-away. Su resistencia los hace ideales para alimentos calientes, grasos o con salsas.</p>
                         </div>
                         <div class="model-selector">
                             <h3>Selecciona el tamaño:</h3>
@@ -854,37 +834,37 @@
             {
                 id: 'envases-carton',
                 name: 'Envases de Cartón',
-                material: 'Cartón',
+                material: 'Cartón Reciclado',
                 basePrice: 0.1,
-                image: '[Imagen: Envase de cartón]'
+                image: 'Envases de Cartón Reciclado'
             },
             {
                 id: 'bolsas-compostables',
                 name: 'Bolsas Compostables',
                 material: 'Papel/Cartón',
                 basePrice: 0.15,
-                image: '[Imagen: Bolsas compostables]'
+                image: 'Bolsas Compostables Ecológicas'
             },
             {
                 id: 'vasos-biodegradables',
                 name: 'Vasos Biodegradables',
                 material: 'Fibras Vegetales',
                 basePrice: 0.1,
-                image: '[Imagen: Vasos biodegradables]'
+                image: 'Vasos de Fibras Vegetales'
             },
             {
                 id: 'cajas-envios',
                 name: 'Cajas para Envíos',
                 material: 'Cartón Corrugado',
                 basePrice: 0.5,
-                image: '[Imagen: Cajas de envío]'
+                image: 'Cajas de Envío Resistentes'
             },
             {
                 id: 'envases-bagazo',
                 name: 'Envases de Bagazo',
                 material: 'Bagazo de Caña',
                 basePrice: 0.2,
-                image: '[Imagen: Envases de bagazo]'
+                image: 'Envases de Bagazo de Caña'
             }
         ];
 
@@ -1054,16 +1034,9 @@
             `).join('');
         }
 
-        // Función para controlar carrusel
+        // Función para controlar carrusel (ya no se usa pero se mantiene por compatibilidad)
         function goToSlide(carouselType, slideIndex) {
-            const carousel = document.getElementById(`carousel-${carouselType}`);
-            const dots = document.querySelectorAll(`#carousel-${carouselType} ~ .carousel-nav .carousel-dot`);
-            
-            carousel.style.transform = `translateX(-${slideIndex * 100}%)`;
-            
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === slideIndex);
-            });
+            // Función obsoleta pero mantenida para evitar errores
         }
 
         // Inicializar la página
@@ -1115,21 +1088,22 @@
             <div class="product-detail">
                 <h1>Bolsas Compostables</h1>
                 <div class="product-main">
-                    <div class="carousel-container">
-                        <div class="carousel" id="carousel-bolsas">
-                            <div class="carousel-slide">[Imagen 1: Bolsas de papel]</div>
-                            <div class="carousel-slide">[Imagen 2: Bolsas de cartón]</div>
-                            <div class="carousel-slide">[Imagen 3: Bolsas con diseño]</div>
-                        </div>
-                        <div class="carousel-nav">
-                            <div class="carousel-dot active" onclick="goToSlide('bolsas', 0)"></div>
-                            <div class="carousel-dot" onclick="goToSlide('bolsas', 1)"></div>
-                            <div class="carousel-dot" onclick="goToSlide('bolsas', 2)"></div>
-                        </div>
+                    <div class="product-image-container">
+                        <div class="product-single-image">Bolsas Compostables<br>Papel y Cartón Ecológico</div>
                     </div>
                     <div class="product-details">
                         <div class="description">
-                            <p>Nuestras bolsas compostables son la alternativa perfecta a las bolsas de plástico tradicionales. Fabricadas con materiales orgánicos que se descomponen completamente en compost doméstico en menos de 90 días. Resistentes, duraderas y disponibles en diferentes materiales y acabados.</p>
+                            <p><strong>Bolsas compostables de alta calidad y resistencia</strong></p>
+                            <p>Nuestras bolsas compostables representan la mejor alternativa ecológica a las bolsas de plástico tradicionales. Fabricadas con materiales completamente orgánicos que se integran perfectamente al ciclo natural de compostaje doméstico e industrial.</p>
+                            <p><strong>Características principales:</strong></p>
+                            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                                <li>Compostaje completo en menos de 90 días</li>
+                                <li>Resistentes al peso y a la humedad moderada</li>
+                                <li>Sin tintas ni químicos tóxicos</li>
+                                <li>Disponibles en papel natural y cartón reforzado</li>
+                                <li>Opción de diseño personalizado ecológico</li>
+                            </ul>
+                            <p>Perfectas para comercios, mercados, eventos y uso doméstico. Las bolsas de papel son ideales para productos secos, mientras que las de cartón ofrecen mayor resistencia para compras más pesadas.</p>
                         </div>
                         <div class="model-selector">
                             <h3>Selecciona el material:</h3>
@@ -1166,21 +1140,22 @@
             <div class="product-detail">
                 <h1>Vasos Biodegradables</h1>
                 <div class="product-main">
-                    <div class="carousel-container">
-                        <div class="carousel" id="carousel-vasos">
-                            <div class="carousel-slide">[Imagen 1: Vasos pequeños 50ml]</div>
-                            <div class="carousel-slide">[Imagen 2: Vasos medianos 250ml]</div>
-                            <div class="carousel-slide">[Imagen 3: Vasos grandes con tapa]</div>
-                        </div>
-                        <div class="carousel-nav">
-                            <div class="carousel-dot active" onclick="goToSlide('vasos', 0)"></div>
-                            <div class="carousel-dot" onclick="goToSlide('vasos', 1)"></div>
-                            <div class="carousel-dot" onclick="goToSlide('vasos', 2)"></div>
-                        </div>
+                    <div class="product-image-container">
+                        <div class="product-single-image">Vasos Biodegradables<br>Fibras Vegetales Naturales</div>
                     </div>
                     <div class="product-details">
                         <div class="description">
-                            <p>Vasos fabricados con fibras vegetales biodegradables, perfectos para bebidas calientes y frías. Resistentes al agua y completamente compostables. Ideales para eventos, oficinas y establecimientos comprometidos con el medio ambiente.</p>
+                            <p><strong>Vasos biodegradables de fibras vegetales premium</strong></p>
+                            <p>Fabricados con una innovadora mezcla de fibras vegetales naturales, nuestros vasos biodegradables ofrecen la resistencia necesaria para bebidas calientes y frías, manteniéndose firmes durante todo su uso y descomponiéndose completamente después.</p>
+                            <p><strong>Características principales:</strong></p>
+                            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                                <li>Resistentes hasta 85°C para bebidas calientes</li>
+                                <li>Impermeables y sin filtración de líquidos</li>
+                                <li>Biodegradación completa en 45-60 días</li>
+                                <li>Sin recubrimientos plásticos ni ceras</li>
+                                <li>Disponible con tapas compostables opcionales</li>
+                            </ul>
+                            <p>Ideales para cafeterías, eventos, oficinas y cualquier establecimiento comprometido con la sostenibilidad. Disponibles en 4 tamaños diferentes, desde pequeñas degustaciones hasta bebidas grandes.</p>
                         </div>
                         <div class="model-selector">
                             <h3>Selecciona el
