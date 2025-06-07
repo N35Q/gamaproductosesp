@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vasos biodegradables - GamaProductosESP</title>
+  <style>
+    body { margin: 0; font-family: sans-serif; background-color: #f3f0e0; color: #2e4d1f; }
+    header { position: sticky; top: 0; background-color: #d2b48c; padding: 10px; display: flex; justify-content: space-between; align-items: center; z-index: 1000; }
+    nav ul { list-style: none; display: flex; gap: 10px; margin: 0; padding: 0; }
+    nav a { text-decoration: none; color: #2e4d1f; font-weight: bold; }
+    main { padding: 20px; }
+    img { width: 300px; height: 300px; object-fit: cover; border-radius: 10px; }
+    .precio { font-weight: bold; margin: 10px 0; }
+    select { margin-top: 10px; }
+    .recomendaciones { margin-top: 30px; background-color: #e6f3e6; padding: 15px; border-radius: 10px; }
+    footer { background-color: #d2b48c; padding: 10px; text-align: center; margin-top: 30px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GamaProductosESP</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="responsabilidad.html">Responsabilidad Medioambiental</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 style="color: #2e7d32;">Vasos biodegradables</h2>
+    <img src="https://www.plasticomania.com/1273-large_default/carton-papel-120ml.jpg" alt="Vasos biodegradables" />
+    <p>Nuestros vasos biodegradables son resistentes, ligeros y respetuosos con el planeta. Fabricados con papel reciclado, perfectos para bebidas calientes o frías.</p>
+
+    <label for="vaso">Selecciona el tamaño:</label>
+    <select id="vaso" onchange="actualizarPrecio()">
+      <option value="0.10">50ml - 0.10$</option>
+      <option value="0.20">100ml - 0.20$</option>
+      <option value="0.30">250ml - 0.30$</option>
+      <option value="0.40">500ml - 0.40$</option>
+      <option value="0.45">500ml con tapa - 0.45$</option>
+    </select>
+
+    <p class="precio">Precio actual: <span id="precio">0.10</span>$</p>
+
+    <div class="recomendaciones">
+      <h3>Te puede interesar:</h3>
+      <ul>
+        <li><a href="bolsas-compostables.html">Bolsas compostables</a></li>
+        <li><a href="envase-carton.html">Envases de cartón</a></li>
+        <li><a href="envases-cana.html">Envases caña de azúcar</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>Creado por: Juan Pérez, Ana López, Marta Ruiz</p>
+    <p>Correos: juan@example.com, ana@example.com, marta@example.com</p>
+    <p>&copy; 2025 GamaProductosESP</p>
+  </footer>
+
+  <script>
+    function actualizarPrecio() {
+      const select = document.getElementById("vaso");
+      document.getElementById("precio").textContent = select.value;
+    }
+  </script>
+</body>
+</html>
