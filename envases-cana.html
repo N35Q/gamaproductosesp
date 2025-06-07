@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Envases de caña de azúcar - GamaProductosESP</title>
+  <style>
+    body { margin: 0; font-family: sans-serif; background-color: #f3f0e0; color: #2e4d1f; }
+    header { position: sticky; top: 0; background-color: #d2b48c; padding: 10px; display: flex; justify-content: space-between; align-items: center; z-index: 1000; }
+    nav ul { list-style: none; display: flex; gap: 10px; margin: 0; padding: 0; }
+    nav a { text-decoration: none; color: #2e4d1f; font-weight: bold; }
+    main { padding: 20px; }
+    img { width: 300px; height: 300px; object-fit: cover; border-radius: 10px; }
+    .precio { font-weight: bold; margin: 10px 0; }
+    select { margin-top: 10px; }
+    .recomendaciones { margin-top: 30px; background-color: #e6f3e6; padding: 15px; border-radius: 10px; }
+    footer { background-color: #d2b48c; padding: 10px; text-align: center; margin-top: 30px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GamaProductosESP</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="responsabilidad.html">Responsabilidad Medioambiental</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 style="color: #2e7d32;">Envases de caña de azúcar</h2>
+    <img src="https://decofiesta.eu/16479-large_default/envases-cana-azucar-tapa-bisagra-color-blanco-23-x-155-x-79cm.jpg" alt="Envases de caña de azúcar" />
+    <p>Envases fabricados con caña de azúcar, 100% biodegradables y compostables, perfectos para alimentos y bebidas. Disponibles en varios tamaños para ajustarse a tus necesidades.</p>
+
+    <label for="envase">Selecciona el tamaño:</label>
+    <select id="envase" onchange="actualizarPrecio()">
+      <option value="0.20">10x10 cm - 0.20$</option>
+      <option value="0.60">20x20 cm - 0.60$</option>
+      <option value="1.00">30x30 cm - 1.00$</option>
+    </select>
+
+    <p class="precio">Precio actual: <span id="precio">0.20</span>$</p>
+
+    <div class="recomendaciones">
+      <h3>Te puede interesar:</h3>
+      <ul>
+        <li><a href="envase-carton.html">Envases de cartón</a></li>
+        <li><a href="bolsas-compostables.html">Bolsas compostables</a></li>
+        <li><a href="cajas-envios.html">Cajas para envíos</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>Creado por: Juan Pérez, Ana López, Marta Ruiz</p>
+    <p>Correos: juan@example.com, ana@example.com, marta@example.com</p>
+    <p>&copy; 2025 GamaProductosESP</p>
+  </footer>
+
+  <script>
+    function actualizarPrecio() {
+      const select = document.getElementById("envase");
+      document.getElementById("precio").textContent = select.value;
+    }
+  </script>
+</body>
+</html>
